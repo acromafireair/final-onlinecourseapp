@@ -104,7 +104,7 @@ class Enrollment(models.Model):
 class Question(models.Model):
     courses=models.ManyToManyField(Course)
     text=models.TextField()
-    grade=models.BooleanField()
+    grade=models.FloatField()
 
     # <HINT> A sample model method to calculate if learner get the score of the question
     #def is_get_score(self, selected_ids):
